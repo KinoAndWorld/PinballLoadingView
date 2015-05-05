@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2bd-nG-Tmm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--PinballLoadingVIewDemo-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PinballLoadingViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5YH-eY-uBx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="rxt-5x-9mI"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="4GO-fP-pou"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PinballLoadingVIewDemo" id="hPS-59-77A"/>
+                    <connections>
+                        <outlet property="tableView" destination="5YH-eY-uBx" id="a9Z-61-VZu"/>
+                        <segue destination="0Nm-lD-KWa" kind="push" identifier="link1" id="rpf-no-2Wo"/>
+                        <segue destination="oH5-1z-bqI" kind="push" identifier="link2" id="xZy-4h-DQ6"/>
+                        <segue destination="A6H-fq-zyq" kind="push" identifier="link3" id="Yxk-83-Zvc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="296"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="FTQ-Wl-wP3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8G-f2-bl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController1" id="0Nm-lD-KWa" customClass="ViewController1" customModule="PinballLoadingViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZv-Ec-V22"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kwt-ZC-ZX3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xql-jD-nwz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o1g-AD-2BP"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1007" y="6"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="J7f-Qc-4xH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nQ-nx-DIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController2" id="oH5-1z-bqI" customClass="ViewController2" customModule="PinballLoadingViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ywm-e3-dKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="5b7-cI-87X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8y8-WL-28t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="td1-k8-WYC"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1007" y="622"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="Vhr-g0-YVW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqc-f2-BfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController3" id="A6H-fq-zyq" customClass="ViewController3" customModule="PinballLoadingViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="joJ-lO-Zql"/>
+                        <viewControllerLayoutGuide type="bottom" id="dBk-PL-ueW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSw-Zz-3C3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3IT-xA-gOM"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1379" y="296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VlS-jp-tTO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIG-7g-5IN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2bd-nG-Tmm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rOP-yO-f89">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="EmR-ME-gBe"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="200" y="296"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
