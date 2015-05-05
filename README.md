@@ -2,7 +2,7 @@
 
 Swift写的一个加载页效果，觉得比较有趣~当做练手
 
-![Screenshot](http://ww2.sinaimg.cn/mw1024/6ff7b43egw1erti08ug2jg20hk0vcx6p.gif) 
+![Screenshot](http://ww2.sinaimg.cn/mw1024/6ff7b43egw1erti08ug2jg20hk0vcx6p.gif  =320x568) 
 
 ## Usage
 
